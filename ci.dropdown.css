@@ -1,0 +1,70 @@
+/* line 6, ../sass/template/_dropdown.scss */
+.ci-dropdown {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+/* line 15, ../sass/template/_dropdown.scss */
+.ci-dropdown.active {
+  overflow: visible;
+}
+/* line 17, ../sass/template/_dropdown.scss */
+.ci-dropdown.active > ul {
+  display: inline-block;
+  opacity: 1;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 25, ../sass/template/_dropdown.scss */
+.ci-dropdown > span {
+  display: block;
+  padding: 5px;
+  background-color: #40d47e;
+  color: #fff;
+  font-weight: bold;
+}
+/* line 33, ../sass/template/_dropdown.scss */
+.ci-dropdown > span:hover {
+  background-color: #27ae60;
+}
+/* line 38, ../sass/template/_dropdown.scss */
+.ci-dropdown > span::after {
+  content: '< >';
+  float: right;
+  -ms-transform: scale(1.3, 0.8) rotate(90deg);
+  -webkit-transform: scale(1.3, 0.8) rotate(90deg);
+  transform: scale(1.3, 0.8) rotate(90deg);
+}
+/* line 48, ../sass/template/_dropdown.scss */
+.ci-dropdown > ul {
+  width: 100%;
+  background-color: #2c3e50;
+  color: #fff;
+  margin: 0px;
+  position: absolute;
+  z-index: 2;
+  -webkit-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  transition: top 0.6s;
+  position: absolute;
+  opacity: 0;
+}
+/* line 61, ../sass/template/_dropdown.scss */
+.ci-dropdown > ul > li {
+  padding: 5px;
+  border-bottom: 1px solid #34495e;
+  padding-left: 10px;
+}
+/* line 67, ../sass/template/_dropdown.scss */
+.ci-dropdown > ul > li:hover {
+  background-color: #34495e;
+}
+/* line 72, ../sass/template/_dropdown.scss */
+.ci-dropdown > ul > li.active {
+  background-color: #40d47e;
+}
